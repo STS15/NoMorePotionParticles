@@ -1,27 +1,45 @@
+No Potion Particles in First-Person View Mod
+============================================
 
-Installation information
-=======
+Overview
+--------
 
-This template repository can be directly cloned to get you started with a new
-mod. Simply create a new repository cloned from this one, by following the
-instructions at [github](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template).
+This Minecraft mod removes potion effect particles from the first-person view, providing a cleaner and less obstructed gameplay experience. If you've ever been annoyed by the distracting swirls and particles caused by active potion effects while playing in first-person, this mod is the perfect solution.
 
-Once you have your clone, simply open the repository in the IDE of your choice. The usual recommendation for an IDE is either IntelliJ IDEA or Eclipse.
+Features
+--------
 
-> **Note**: For Eclipse, use tasks in `Launch Group` instead of ones founds in `Java Application`. A preparation task must run before launching the game. NeoGradle uses launch groups to do these subsequently.
+*   **Removes First-Person Potion Particles:** The mod specifically targets and removes the visual particles that appear when potion effects are active in first-person view, allowing you to focus on the game without visual clutter.
+*   **Compatible with NeoForge 1.21:** Built using the NeoForge modding platform, ensuring compatibility with the latest Minecraft versions.
 
-If at any point you are missing libraries in your IDE, or you've run into problems you can
-run `gradlew --refresh-dependencies` to refresh the local cache. `gradlew clean` to reset everything 
-{this does not affect your code} and then start the process again.
+How It Works
+------------
 
-Mapping Names:
-============
-By default, the MDK is configured to use the official mapping names from Mojang for methods and fields 
-in the Minecraft codebase. These names are covered by a specific license. All modders should be aware of this
-license. For the latest license text, refer to the mapping file itself, or the reference copy here:
-https://github.com/NeoForged/NeoForm/blob/main/Mojang.md
+This mod uses a Mixin to intercept and modify the rendering process in Minecraft. By targeting the method responsible for displaying potion effect particles in the first-person view, it effectively prevents these particles from being rendered on the screen, without affecting other aspects of gameplay.
 
-Additional Resources: 
-==========
-Community Documentation: https://docs.neoforged.net/  
-NeoForged Discord: https://discord.neoforged.net/
+Installation
+------------
+
+*   Ensure you have NeoForge 1.21 installed in your Minecraft modding environment.
+*   Download the mod JAR file and place it in your Minecraft `mods` folder.
+*   Launch Minecraft, and enjoy a cleaner first-person view with no potion particles!
+
+ 
+
+Compatibility
+-------------
+
+*   Minecraft 1.21
+*   NeoForge 21.0.167+
+
+Notes
+-----
+
+*   This mod only affects the first-person view. Potion particles will still be visible in third-person view and for other players in multiplayer.
+
+Feedback
+--------
+
+If you encounter any issues or have suggestions for improvements, feel free to open an issue on the mod's GitHub repository or leave a comment.
+
+Enjoy a clutter-free Minecraft experience!
