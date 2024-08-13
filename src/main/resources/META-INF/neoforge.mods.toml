@@ -1,0 +1,29 @@
+modLoader = "javafml"
+loaderVersion = "[1,)"
+license = "All Rights Reserved"
+issueTrackerURL = "https://github.com/STS15/Fargos-Talismans/issues"
+logoFile = "logo.png"
+
+[[mixins]]
+config = "mixins.${mod_id}.json"
+
+[[mods]]
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+displayURL = "https://www.curseforge.com/minecraft/mc-mods/fargos-talismans"
+authors = "${mod_authors}"
+description = "${mod_description}"
+
+[[dependencies.${mod_id}]]
+modId = "minecraft"
+type="required"
+versionRange = "[1.21, 1.22)"
+ordering = "NONE"
+side = "BOTH"
+[[dependencies.${mod_id}]]
+modId = "neoforge"
+type="required"
+versionRange = "[21.0.114-beta,)"
+ordering = "NONE"
+side = "BOTH"
